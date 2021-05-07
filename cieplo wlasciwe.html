@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF=8">
+<title>wzory Fizyka</title>
+
+<script type="text/javascript">
+
+    function dzialanie()
+    {
+        var l1 = document.getElementById("k").value;
+        var l2 = document.getElementById("p").value;
+        var l3 = document.getElementById("m").value;
+        var l4 = document.getElementById("Q").value;
+        var wynik1 = l1 - l2
+        var wynik2 = wynik1 * l3
+        var wynik3 = l4 / wynik2 
+        document.getElementById("wynik1").innerHTML="Δt ="+ wynik1
+        document.getElementById("wynik2").innerHTML="m ∙ Δt ="+ wynik2
+        document.getElementById("wynik3").innerHTML="c ="+ wynik3
+    }
+
+</script>
+</head>
+
+
+<body background="tlo.jpg">
+
+    <div id="logo">
+        Wzory w Fizyce
+    </div><br><br><br><br>
+    <table>
+    <tr><td>
+    <div id="tabela"><center><br>
+        <a href="przyspieszenie.html">
+        <div id="tabela1">
+            Przyśpieszenie
+        </div><br></a>
+        <a href="energia.html">
+        <div id="tabela1">
+            energia kinetyczna
+        </div><br></a>
+        <a href="Wartość siły grawitacji.html">
+        <div id="tabela1">
+            Wartość siły grawitacji
+        </div><br></a>
+        <a href="cieplo wlasciwe.html">
+        <div id="tabela1">
+            Ciepło właściwe
+        </div><br></a>
+        <a href="sprężystość.html">
+        <div id="tabela1">
+            Energia potencjalna spręźystości
+    </div></div></a></center>
+<div id="dzialanie1">
+    <table>
+    <tr><td>
+   
+    <img src="cieplo wlasciwe.jpg" style="float:left; padding: 20px;"></td>
+    <td><h1>Oblicz Δt &nbsp; <button onclick="dzialanie()"><b>Oblicz!</b></button></h1> 
+    Podaj Tk <input type="text" id="k"> &nbsp; ∘C<br><br>
+    Podaj Tp <input type="text" id="p"> &nbsp; ∘C<br><br>
+    Wynik:<div id="wynik1"></div></td></tr><tr><td>
+
+    <h1 ALIGN="center">Tk - Tp = Δt</h1>
+    <h2>
+        c – ciepło właściwe<br>
+        <hr color="black" size="4px" ALIGN="left">
+        Q – ciepło<br>
+        <hr color="black" size="4px" ALIGN="left">
+        m – masa<br>
+        <hr color="black" size="4px"ALIGN="left">
+        Δt – różnica temperatury<br>
+        <hr color="black" size="4px"ALIGN="left">
+        Tk - temperatura końcowa<br>
+        <hr color="black" size="4px"ALIGN="left">
+        Tp -  temperatura początkowa
+    </h2></td><td>
+        <h1>Oblicz m ∙ Δt &nbsp; <button onclick="dzialanie()"><b>Oblicz!</b></button></h1> 
+        Podaj m <input type="text" id="m"><br><br>
+        Wynik:<div id="wynik2"></div>
+    </td><td>
+        <h1>Oblicz c &nbsp; <button onclick="dzialanie()"><b>Oblicz!</b></button></h1>
+        Podaj Q <input type="text" id="Q"><br><br>
+        Wynik:<div id="wynik3"></div>
+    </td></tr></table>
+</div>
+
+
+</body>
+</html>               

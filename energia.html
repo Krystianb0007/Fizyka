@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF=8">
+<title>wzory Fizyka</title>
+
+<script type="text/javascript">
+
+    function dzialanie()
+    {
+        var l1 = document.getElementById("m").value;
+        var l2 = document.getElementById("v").value;
+        var wynik1 = l1 * (l2 * l2)
+        var wynik2 = wynik1 / 2
+        document.getElementById("wynik1").innerHTML="mv² = "+ wynik1
+        document.getElementById("wynik2").innerHTML="Ek = "+ wynik2
+    }
+
+</script>
+</head>
+
+
+<body background="tlo.jpg">
+
+    <div id="logo">
+        Wzory w Fizyce
+    </div><br><br><br><br>
+    <table>
+    <tr><td>
+    <div id="tabela"><center><br>
+        <a href="przyspieszenie.html">
+        <div id="tabela1">
+            Przyśpieszenie
+        </div><br></a>
+        <a href="energia.html">
+        <div id="tabela1">
+            energia kinetyczna
+        </div><br></a>
+        <a href="Wartość siły grawitacji.html">
+        <div id="tabela1">
+            Wartość siły grawitacji
+        </div><br></a>
+        <a href="cieplo wlasciwe.html">
+        <div id="tabela1">
+            Ciepło właściwe
+        </div><br></a>
+        <a href="sprężystość.html">
+        <div id="tabela1">
+            Energia potencjalna spręźystości
+    </div></div></a></center>
+<div id="dzialanie1">
+    <table>
+    <tr><td>
+   
+    <img src="energia.jpg" style="float:left; padding: 20px;"></td>
+    <td><h1>Oblicz mv² &nbsp; <button onclick="dzialanie()"><b>Oblicz!</b></button></h1> 
+    Podaj m <input type="text" id="m"><br><br>
+    Podaj v <input type="text" id="v"><br><br>
+    Wynik:<div id="wynik1"></div></td></tr><tr><td>
+
+    <h1 ALIGN="center">m ∙ v² = mv² <br></h1>
+    <h2>
+        Ek – energia kinetyczna<br>
+        <hr color="black" size="4px" ALIGN="left">
+        m – masa<br>
+        <hr color="black" size="4px"ALIGN="left">
+        v – szybkość<br>
+    </h2></td><td>
+        <h1>Wynik Ek:</h1> 
+        Wynik:<div id="wynik2"></div>
+    </td></tr></table>
+</div>
+
+
+
+
+</body>
+</html>               

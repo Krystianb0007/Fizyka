@@ -1,0 +1,51 @@
+
+#logo
+{
+    font-family: 'Bahnschrift SemiBold';
+    width:1810px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 14px;
+    font-size: 39px;
+    background: rgba(23, 104, 179, 0.6);
+    color: white;
+    font-style: "Bookman Old Style";
+    border-radius: 35px;
+}
+#tabela
+{
+    font-family: 'Bahnschrift SemiBold';
+    float:left;
+    width:500px;
+    height:770px;   
+    background: rgba(125, 201, 231, 0.6);
+    box-shadow: 0px 0px 40px rgb(37, 125, 207);
+    margin-left: 0px;
+    margin-right: 55px;
+}
+#tabela1
+{
+    width:450px;
+    background: rgba(37, 125, 207, 0.6);
+    color: white;
+    font-size: 29px;
+    text-align: center;
+    border-radius: 35px;
+    line-height: 2cm
+}
+
+#tabela1:hover
+{
+    background-color: rgb(29, 112, 190);
+}
+
+#dzialanie1
+{
+    float: left;
+    width:1240px;
+    height:730px;   
+    background: rgba(8, 14, 17, 0.6);
+    color: white;
+    padding: 20px;
+}

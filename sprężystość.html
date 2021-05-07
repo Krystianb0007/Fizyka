@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF=8">
+<title>wzory Fizyka</title>
+
+<script type="text/javascript">
+
+    function dzialanie()
+    {
+        var l1 = document.getElementById("k").value;
+        var l2 = document.getElementById("x").value;
+        var wynik1 = l1 * (l2 * l2) /2
+        document.getElementById("wynik1").innerHTML="Ep ="+ wynik1
+    }
+
+</script>
+</head>
+
+
+<body background="tlo.jpg">
+
+    <div id="logo">
+        Wzory w Fizyce
+    </div><br><br><br><br>
+    <table>
+    <tr><td>
+    <div id="tabela"><center><br>
+        <a href="przyspieszenie.html">
+        <div id="tabela1">
+            Przyśpieszenie
+        </div><br></a>
+        <a href="energia.html">
+        <div id="tabela1">
+            energia kinetyczna
+        </div><br></a>
+        <a href="Wartość siły grawitacji.html">
+        <div id="tabela1">
+            Wartość siły grawitacji
+        </div><br></a>
+        <a href="cieplo wlasciwe.html">
+        <div id="tabela1">
+            Ciepło właściwe
+        </div><br></a>
+        <a href="sprężystość.html">
+        <div id="tabela1">
+            Energia potencjalna spręźystości
+    </div></div></a></center>
+<div id="dzialanie1">
+    <table>
+    <tr><td>
+   
+    <img src="sprezystosc.jpg" style="float:left; padding: 20px;"></td>
+    <td><h1>Oblicz Ep &nbsp; <button onclick="dzialanie()"><b>Oblicz!</b></button></h1> 
+    Podaj k <input type="text" id="k"><br><br>
+    Podaj x <input type="text" id="x"><br><br>
+    Wynik:<div id="wynik1"></div></td></tr><tr><td>
+
+    <h2>
+        Ep - energia sprężystości<br>
+        <hr color="black" size="4px" ALIGN="left">
+        k - współczynnik sprężystości<br>
+        <hr color="black" size="4px" ALIGN="left">
+        x - odkształcenie<br>
+    </h2></td><td>
+</div>
+
+
+</body>
+</html>               

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF=8">
+<title>wzory Fizyka</title>
+
+<script type="text/javascript">
+
+    function dzialanie()
+    {
+        var l1 = document.getElementById("m1").value;
+        var l2 = document.getElementById("m2").value;
+        var l3 = document.getElementById("r").value;
+        var l4 = document.getElementById("G").value;
+        var wynik1 = l1 * l2
+        var wynik2 = wynik1 / (l3 * l3)
+        var wynik3 = wynik2 * l4
+        document.getElementById("wynik1").innerHTML="m ="+ wynik1
+        document.getElementById("wynik2").innerHTML="m : r² ="+ wynik2
+        document.getElementById("wynik3").innerHTML="F ="+ wynik3
+    }
+
+</script>
+</head>
+
+
+<body background="tlo.jpg">
+
+    <div id="logo">
+        Wzory w Fizyce
+    </div><br><br><br><br>
+    <table>
+    <tr><td>
+    <div id="tabela"><center><br>
+        <a href="przyspieszenie.html">
+        <div id="tabela1">
+            Przyśpieszenie
+        </div><br></a>
+        <a href="energia.html">
+        <div id="tabela1">
+            energia kinetyczna
+        </div><br></a>
+        <a href="Wartość siły grawitacji.html">
+        <div id="tabela1">
+            Wartość siły grawitacji
+        </div><br></a>
+        <a href="cieplo wlasciwe.html">
+        <div id="tabela1">
+            Ciepło właściwe
+        </div><br></a>
+        <a href="sprężystość.html">
+        <div id="tabela1">
+            Energia potencjalna spręźystości
+    </div></div></a></center>
+<div id="dzialanie1">
+    <table>
+    <tr><td>
+   
+    <img src="sila grawitacji.jpg" style="float:left; padding: 20px;"></td>
+    <td><h1>Oblicz m &nbsp; <button onclick="dzialanie()"><b>Oblicz!</b></button></h1> 
+    Podaj m₁ <input type="text" id="m1"><br><br>
+    Podaj m₂ <input type="text" id="m2"><br><br>
+    Wynik:<div id="wynik1"></div></td></tr><tr><td>
+
+    <h1 ALIGN="center">m₁ ∙ m₂ = m<br></h1>
+    <h2>
+        m₁,m₂,m – masy ciała<br>
+        <hr color="black" size="4px" ALIGN="left">
+        r² – odległość między ich środkami<br>
+        <hr color="black" size="4px"ALIGN="left">
+        G – stała grawitacji<br>
+    </h2></td><td>
+        <h1>Oblicz m : r² &nbsp; <button onclick="dzialanie()"><b>Oblicz!</b></button></h1> 
+        Podaj r² <input type="text" id="r"><br><br>
+        Wynik:<div id="wynik2"></div>
+    </td><td>
+        <h1>Oblicz G &nbsp; <button onclick="dzialanie()"><b>Oblicz!</b></button></h1>
+        Podaj G <input type="text" id="G"><br><br>
+        Wynik:<div id="wynik3"></div>
+    </td></tr></table>
+</div>
+
+
+</body>
+</html>               

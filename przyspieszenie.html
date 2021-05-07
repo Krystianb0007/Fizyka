@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF=8">
+<title>wzory Fizyka</title>
+
+<script type="text/javascript">
+
+    function dzialanie()
+    {
+        var l1 = document.getElementById("vk").value;
+        var l2 = document.getElementById("vp").value;
+        var l3 = document.getElementById("t").value;
+        var wynik1 = l1 - l2
+        var wynik2 = wynik1 / l3
+        document.getElementById("wynik1").innerHTML="ΔV = "+ wynik1
+        document.getElementById("wynik2").innerHTML="ΔV = "+ wynik2
+    }
+
+</script>
+</head>
+
+
+<body background="tlo.jpg">
+
+    <div id="logo">
+        Wzory w Fizyce
+    </div><br><br><br><br>
+    <table>
+    <tr><td>
+    <div id="tabela"><center><br>
+        <a href="przyspieszenie.html">
+        <div id="tabela1">
+            Przyśpieszenie
+        </div><br></a>
+        <a href="energia.html">
+        <div id="tabela1">
+            energia kinetyczna
+        </div><br></a>
+        <a href="Wartość siły grawitacji.html">
+        <div id="tabela1">
+            Wartość siły grawitacji
+        </div><br></a>
+        <a href="cieplo wlasciwe.html">
+        <div id="tabela1">
+            Ciepło właściwe
+        </div><br></a>
+        <a href="sprężystość.html">
+        <div id="tabela1">
+            Energia potencjalna spręźystości
+    </div></div></a></center>
+<div id="dzialanie1">
+    <table>
+    <tr><td>
+   
+    <img src="przyspieszenie.jpg" style="float:left; padding: 20px;"></td>
+    <td><h1>Oblicz ΔV &nbsp; <button onclick="dzialanie()"><b>Oblicz!</b></button></h1> 
+    Podaj Vk <input type="text" id="vk">&nbsp; Km/h<br><br>
+    Podaj Vp <input type="text" id="vp">&nbsp; Km/h<br><br>
+    Wynik:<div id="wynik1"></div></td></tr><tr><td>
+
+    <h1 ALIGN="center">ΔV=(Vk−Vp) <br></h1>
+    <h2>
+        a &nbsp; &nbsp; – przyspieszenie<br>
+        <hr color="black" size="4px" ALIGN="left">
+        ΔV – zmiana prędkości<br>
+        <hr color="black" size="4px" ALIGN="left">
+        Vk – prędkość końcowa<br>
+        <hr color="black" size="4px"ALIGN="left">
+        Vp – prędkość początkowa<br>
+        <hr color="black" size="4px"ALIGN="left">
+        t &nbsp; &nbsp; –  czas, w którym nastąpiła<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; zmiana prędkości
+    </h2></td><td>
+        <h1>Oblicz a: &nbsp; <button onclick="dzialanie()"><b>Oblicz!</b></button></h1> 
+        Podaj t <input type="text" id="t">&nbsp; s<br><br>
+        Wynik:<div id="wynik2"></div>
+    </td></tr></table>
+</div>
+
+
+</body>
+</html>               
